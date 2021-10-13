@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Code Quiz</title>
+    <!--Link to Css-->
+    <link rel="stylesheet" href="style-4.css">
+    <!--Link to font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+</head>
+  <body>   
+    <!--Quiz Start Button-->
+    <div class="start_btn"><button>Start Quiz</button></div>
+        <!--Box of Rules for Quiz-->
+    <div class="info_box"> 
+        <div class="info_title">
+            <span>Rules for Quiz</span>
+        </div>
+            <div class="info_list">
+                <div class="info">No cheating.</div>
+                <div class="info">You will have 50 seconds for five quick questions.</div>
+                <div class="info">You will get 1 point for each question answered correctly.</div>
+            </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!--Quiz Box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">View Quiz Highscore</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">50</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section><!--Created js.questions-4.js for Array on questions.-->
+            <div class="que_text">
+                <!--<span>What is 2+4?</span>-->
+            </div>
+            <div class="option_list">
+               <!-- <div class="option">
+                    <span>6</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+            </div>
+            <div class="option">
+                <span>0</span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="option">
+                <span>-2</span>
+            </div>
+            <div class="option">
+                <span>7</span>
+            </div>-->
+        </div>
+        </section>
+        <!--Footer Box-->
+        <footer>
+            <div class="total_que">
+            <!--<span><p>2</p>of<p>5</p>Questions</span>-->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+        <!--Result Box-->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've finished the Quiz!</div>
+            <div class="score_text">
+                <span>Total was <p>2</p> out of<p>5</p></span>
+            </div>
+            <div class="buttons">
+                <button class="restart">Try Again?</button>
+                <button class="quit">Exit</button>
+            </div>
+        </div>
+    </div>
+    <script src="js.script-4.js"></script>
+    <script src="js.questions-4.js"></script>
+  </body>
+</html>
