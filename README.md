@@ -5,4 +5,4 @@ This project was to show my skill in creating a quiz application using HTML, Jav
 ![image](https://user-images.githubusercontent.com/87666809/141597974-8212f9fa-48a3-48ae-8d8c-4b580c2ace03.png)
 
 
-Demo: file:///C:/Users/kimag/OneDrive/Desktop/PREWORK_KAH/Module-4/ucsd-04-APIs/04-Web-APIs/02-Homework/index.html
+Demo: https://kimah1999.github.io/Code-Quiz-4/
