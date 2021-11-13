@@ -1,8 +1,6 @@
 /*Google Font*/
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
 *{
-    margin:0;
-    padding:0;
     box-sizing:border-box;
     font-family: 'Scheherazade New', serif;
 }
@@ -39,7 +37,6 @@ body{
 
 .start_btn button{
     font-size: 30px;
-    font-weight: 500;
     color: #45006d;
     padding: 15px 20px;
     border-radius: 5px;
@@ -97,7 +94,6 @@ body{
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    border: none;
     outline: none;
     border-radius: 5px;
     border: 1px solid #45006d;
@@ -107,7 +103,7 @@ body{
 .quiz_box{
     width: 550px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
