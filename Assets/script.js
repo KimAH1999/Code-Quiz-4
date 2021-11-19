@@ -130,6 +130,40 @@ function optionSelected(answer){
     next_btn.classList.add("show"); //show the next button if user selected any option
 }
 
+// if restartQuiz button clicked
+continue_btn.onclick = ()=>{
+    quiz_box.classList.add("activeQuiz"); //show quiz box
+    result_box.classList.remove("activeResult"); //hide result box
+    timeValue = 10; 
+    que_count = 0;
+    que_numb = 1;
+    userScore = 0;
+    showQuetions(que_count); //calling showQestions function
+    queCounter(que_numb); //passing que_numb value to queCounter
+    clearInterval(counter); //clear counter
+    clearInterval(counterLine); //clear counterLine
+    next_btn.classList.remove("show"); //hide the next button
+}
+
+function showResult(){
+    info_box.classList.remove("activeInfo"); //hide info box
+    quiz_box.classList.remove("activeQuiz"); //hide quiz box
+    result_box.classList.add("activeResult"); //show result box
+    const scoreText = result_box.querySelector(".score_text");
+    if (userScore > 3){ // more than 3 is passing
+        //creating a new span tag and passing the user score number and total question number
+        let scoreTag = '<span>and GOOD JOB, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
+    }
+    else if(userScore > 1){ // at least 1 right is ok
+        let scoreTag = '<span>and cool, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else{ // if user scored less than 1
+        let scoreTag = '<span>and unfortunately, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    } 
+}
 
 //time count down  and when time is over, it will say out of time
 var quiz_time_left = 10;
@@ -140,5 +174,4 @@ var interval = setInterval(function(){
     clearInterval(interval);
     document.getElementById('quiz_time_left').innerHTML='Out of time';
   }
-}, 1000);
-
+}, 1000);// 10000=10sec
