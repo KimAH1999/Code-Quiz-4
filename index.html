@@ -30,12 +30,11 @@
     <!--Quiz Box-->
     <div class="quiz_box">
         <header>
-            <div class="title">View Quiz Highscore</div>
-            <div class="timer">
+            <div class="title">Fun Speed Quiz</div>
+            <div class="timer" id="quiz_time_left">
                 <div class="time_text">Time Left</div>
                 <div class="timer_sec">10</div>
             </div>
-            <div class="time_line"></div>
         </header>
         <section><!--Created js.questions-4.js for Array on questions.-->
             <div class="que_text">
@@ -49,12 +48,7 @@
             </div>
             <div class="option">
                 <span>0</span>
-                <div class="icon cross"><i class="fas fa-times"></i></div>
-            </div>
-            <div class="option">
                 <span>-2</span>
-            </div>
-            <div class="option">
                 <span>7</span>
             </div>-->
         </div>
@@ -64,14 +58,11 @@
             <div class="total_que">
             <!--<span><p>2</p>of<p>5</p>Questions</span>-->
             </div>
-            <button class="next_btn">Next Question</button>
+            <button class="next_btn show">Next Question</button>
         </footer>
         <!--Result Box-->
         <div class="result_box">
         <div class="complete_text">You've finished the Quiz!</div>
-        <div class="score_text">
-            <span>Total was <p>2</p> out of<p>5</p></span>
-        </div>
         <div class="buttons">
             <button class="restart">Try Again?</button>
             <button class="quit">Exit</button>
