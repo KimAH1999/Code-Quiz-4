@@ -1,0 +1,152 @@
+/*Wrapper class for the Quiz box*/
+body {
+  background-image: url(../img/scoreboard.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.high-score {
+  border: 1mm ridge;
+}
+
+.wrapper{
+  position: absolute;
+  top: 15%;
+  width:500px;
+  height: 390px;
+  left: 30%;
+  border: 1px solid rgb(80, 153, 255);
+  background-color: rgb(126, 191, 243);
+}
+
+#start{
+  background-color: rgb(80, 153, 255);
+  margin-left: 33%;
+  color:darkblue;
+  padding: 15px 30px;
+  font-size: 22px;
+}
+
+#questions{
+  margin: 22px;
+}
+
+#currentTime{
+  float: right;
+  color: rgb(112, 3, 3);
+  font-size: 25px;
+}
+
+button{
+  border-radius: 10px;
+}
+
+label{
+  margin-right: 12px;
+}
+
+input{
+  margin-bottom: 22px;
+  width: 50%;
+  border: 1px solid slategrey;
+}
+
+h1{
+  text-align: center;
+  color:rgb(0, 0, 0);
+}
+
+li{
+  background-color: rgba(255, 255, 255, 0.81);
+  margin-top: 10px;
+  width: 80%;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 5px 16px;
+}
+
+p{ 
+  color: rgb(0, 0, 0);
+  font-family: monospace, 'Courier New', Courier, monospace;
+  text-align: center;
+
+}
+
+ul{
+  list-style: none;
+}
+
+#createdDivEl {
+  margin-top: 20px;
+  border-top: 1px solid rgb(213, 212, 212);
+}
+
+#Submit{
+  background-color: rgb(80, 153, 255);
+  margin-left: 33%;
+  padding: 16px 30px;
+  color: white;
+  font-size: 21px;
+}
+
+#goBackBtn{
+  background-color: rgb(80, 153, 255);
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
+  color: darkblue;
+  width: auto;
+
+}
+
+#clearBtn{
+  background-color: rgb(80, 153, 255);
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  padding: 11px;
+  font-size: 18px;
+  color: darkblue;
+  width: auto;
+}
+
+#highScoreBtns{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Screen/Window size adjuster*/
+@media screen and (max-width: 900px){
+  body{
+      min-width: 900px;
+  }
+  .wrapper{
+      position: absolute;
+      left: 20%;
+  }
+}
+
+@media screen and (wax-width: 775px){
+  body {
+      max-width: 775px;
+
+  }
+  .wrapper{
+      position: absolute;
+      left: 10%;
+  
+  }
+}
+
+@media screen and (max-width: 550px){
+  body{
+      min-width: 550px;
+  }
+  .wrapper{
+      position: absolute;
+      left: 0%;
+  }
+}
