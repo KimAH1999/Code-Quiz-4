@@ -27,6 +27,7 @@ var questionObjectArray = [
     } 
 ];
 
+//Created variables to hold the element needed
 var currentTimeEl = document.querySelector("#currentTime");
 var timerEl = document.querySelector("#start");
 var questionsEl = document.querySelector("#questions");
@@ -38,6 +39,7 @@ var holdInterval = 0;
 var penalty = 10;
 var ulCreate = document.createElement("ul")
 
+//click action funtion
 timerEl.addEventListener("click", function(){
     
     if(holdInterval === 0){
@@ -55,6 +57,7 @@ timerEl.addEventListener("click", function(){
     createQuestion(questionIndex);
 });
 
+//parameter created for the questions
 function createQuestion(questionIndex){
 
     questionsEl.innerHTML = "";
@@ -68,7 +71,7 @@ function createQuestion(questionIndex){
         questionsEl.setAttribute("style", "color: Darkblue; font-size: 18px;")
         
     }
-
+    //Each method to loop, all array elements in usersChoice array must add a function that takes in a new item
     usersChoices.forEach(function (newItem) {
 
         var listItem = document.createElement("li");
@@ -78,7 +81,7 @@ function createQuestion(questionIndex){
         listItem.addEventListener("click", (compareUsersChoice));
     })
 }
-
+//compareUserChoice is taking in a event parameter in this section
 function compareUsersChoice(event){
   
     var element = event.target;
@@ -109,7 +112,7 @@ function compareUsersChoice(event){
     questionsEl.appendChild(createdDivEl);
 }
 
-
+//function needed for finishing quiz
 function finished(){
  
     questionsEl.innerHTML = "";
