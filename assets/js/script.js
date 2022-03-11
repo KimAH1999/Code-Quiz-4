@@ -3,7 +3,7 @@ var questionObjectArray = [
     {
         question: "Which CSS position is positioned at default value ?",
         choices: ["Fixed Postion" , "Relative Position" , "Static Position" , "Absolute Position"],
-        answer: "Static Postion"
+        answer: "Static Position"
     },
     {
         question: "How would you declare an array named exArray and fill it 3 different choices in Javascript style ?",
