@@ -6,7 +6,5 @@ Creating a quiz application using HTML, Javascript, and CSS. This Project has a 
 
 Demo Link: https://kimah1999.github.io/Code-Quiz-4/
 
-![image](https://user-images.githubusercontent.com/87666809/157777662-2d159ea2-39f7-464d-89ee-50826906e4d5.png)
-![image](https://user-images.githubusercontent.com/87666809/157777987-1f77b53e-2563-4b53-aa9d-1f696200c2f2.png)
-![image](https://user-images.githubusercontent.com/87666809/157778061-4eba49bb-317f-4c5e-9003-bc618130a592.png)
-![image](https://user-images.githubusercontent.com/87666809/157777726-e1bc8103-432f-40ed-80a3-0219db9d6499.png)
+![image](https://user-images.githubusercontent.com/87666809/218223600-dd0baf1d-9fdc-41e2-bec1-afe40be86b72.png)
+
