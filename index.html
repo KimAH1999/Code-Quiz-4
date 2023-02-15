@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/styles.css"/>
-    <title>Code Quiz</title>
-</head>
-<body>
-    <a href="highscores.html" title="HighScores" class="high-score" style="color:rgb(230, 82, 193); font-size:20px ">View HighScores</a>
-    <main class="wrapper">
-        <div id="currentTime"></div>
-        <div id="questions">
-            <h1>Speed Run Quiz</h1>
-            <p>Answer the following questions within the time given. Incorrect answerings will reduce your score and time by 10 seconds each time! </p>
-            <ul id="choicesList"></ul>
-            <button id="start">Start Quiz</button>
-        </div>
-        <script src="./assets/js/script.js"></script>
-    </main>
-</body>
-</html>
+    <!--Heading-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Code Quiz</title>
+    </head>
 
+    <body>
+        <div id="currentTime"></div>
+            <div class="wrapper">
+                <div id="questions">
+                    <h1>Speed Run Quiz</h1>
+                    <p>Answer the following questions within the time given. Incorrect answerings will reduce your score and
+                    time by 10 seconds each time! </p>
+                    <ul id="choicesList"></ul>
+                    <button id="start">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer with link to view highscores -->
+        <footer>
+            <a id="highscores" href="highscores.html"> VIEW HIGHSCORES LIST </a>
+        </footer>
+        <!-- Script element to link script.js -->
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+    </body>
+</html>
